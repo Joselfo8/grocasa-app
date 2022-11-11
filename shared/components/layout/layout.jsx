@@ -1,7 +1,7 @@
 import Head from "next/head"
 
 // Components
-import Navbar from "./navBar/index.jsx"
+import Navbar from "./navbar/navbar.jsx"
 
 export default function Layout (props) {
 
