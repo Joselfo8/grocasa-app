@@ -12,25 +12,35 @@ import preview1 from "../../assets/images/Rectangle -1@2x.png"
 import preview2 from "../../assets/images/Rectangle -2@2x.png"
 
 
-export default function ProductList () {
+export default function DetalleEscritorio () {
 
     return (
         <div className="product-detail">
             
             <div className="product-detail__header">
-                <Image
-                    src={preview1}
-                    alt="Mas información"
-                    layout="responsive"
-                />
+                
+                <div id="prueba" className="product-detail__header-container">
+                    <Image
+                        src={preview1}
+                        alt="Imagen 1"
+                        layout="responsive"
+                    />
+                    <Image
+                        src={preview2}
+                        alt="Imagen 2"
+                        layout="responsive"
+                    />
+                </div>
 
-                <img src="https://img.icons8.com/sf-black/64/null/back.png"/>
-                <img src="https://img.icons8.com/sf-black/64/null/back.png"/>
+                <div className="product-detail__header-controls">
+                    <img className="left" src="https://img.icons8.com/sf-black/64/null/back.png"/>
+                    <img className="right" src="https://img.icons8.com/sf-black/64/null/back.png"/>
+                </div>
 
-                <div className="product-detail__carousel-slides">
-                    <div className="product-detail__carousel-slide"></div>
-                    <div className="product-detail__carousel-slide"></div>
-                    <div className="product-detail__carousel-slide"></div>
+                <div className="product-detail__header-slides">
+                    <div className="product-detail__header-slides-slide active"></div>
+                    <div className="product-detail__header-slides-slide"></div>
+                    <div className="product-detail__header-slides-slide"></div>
                 </div>
             </div>
 

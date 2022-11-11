@@ -16,9 +16,8 @@ export default function CardProduct () {
                 <Image
                     src={mainImage}
                     alt="Imagen previa inmueble"
-                    layout="responsive"
-                />  
-                <img src={mainImage} alt="" />          
+                    layout="responsive"  
+                />            
             </div>
 
             <div className="card-product__text">
@@ -57,11 +56,7 @@ export default function CardProduct () {
                     <p className="price">330.000€</p>
                 </div>
                 <div className="card-product__description-button">
-                    <Image
-                        src={moreInfo}
-                        alt="Mas información"
-                        height={42}
-                    />
+                    <button>Más info</button>
                 </div>
             </div>
         </div>

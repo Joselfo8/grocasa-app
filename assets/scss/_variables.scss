@@ -6,3 +6,16 @@ $font-primary: Montserrat;
 $primary: #FF5000;
 $secondary: #797979;
 $terciary: #909090;
+
+// Button
+%button-primary {
+    height: 45px;
+    width: 170px;
+    background-color: #fff;
+    border: 2px solid $primary;
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: $primary;
+}

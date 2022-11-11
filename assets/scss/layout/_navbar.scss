@@ -1,10 +1,43 @@
 .navbar-container {
-    height: 100%;
-    width: calc(100% - 1.5rem);
+    height: 100px;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 1.5rem;
-    gap: 6rem;
+    position: relative;
+
+    &-back {
+        height: 26px;
+        width: 26px;
+
+        position: absolute;
+        left: 1.5rem;
+    }
+    
+    &-slogan {
+        height: 100%;
+        width: 100%;
+        margin-left: 13%;
+
+        display: flex;
+        align-items: center;
+
+        .img {
+            height: 45px;
+            width: 140px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar-container {
+        &-slogan {
+            margin: 0;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
