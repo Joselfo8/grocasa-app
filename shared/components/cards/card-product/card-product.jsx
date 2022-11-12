@@ -28,27 +28,33 @@ export default function CardProduct () {
             <div className="card-product__description">
                 <div className="card-product__description-features">
                     <div className="card-product__description-features-feature">
-                        <Image
-                            src={area}
-                            alt="area"
-                            height={40}
-                        />  
+                        <div className="img">
+                            <Image
+                                src={area}
+                                alt="area"
+                                layout="responsive"
+                            />  
+                        </div>
                         <p>102<span>m2</span></p>    
                     </div>
                     <div className="card-product__description-features-feature">
-                        <Image
-                            src={bedroom}
-                            alt="bedrooms"
-                            height={40}
-                        />  
+                        <div className="img">
+                            <Image
+                                src={bedroom}
+                                alt="bedrooms"
+                                layout="responsive"
+                            />  
+                        </div>
                         <p>3</p>    
                     </div>
                     <div className="card-product__description-features-feature">
-                        <Image
-                            src={bathroom}
-                            alt="bathrooms"
-                            height={40}
-                        />  
+                        <div className="img">
+                            <Image
+                                src={bathroom}
+                                alt="bathrooms"
+                                layout="responsive"
+                            />  
+                        </div>
                         <p>2</p>    
                     </div>
                 </div>
