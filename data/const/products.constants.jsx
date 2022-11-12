@@ -7,7 +7,7 @@ import locationOnMap from "../../assets/images/Screenshot 2020-07-06 at 11.53.49
 export const products = [
     {
         id: 1,
-        property: 'Ático Dúplex de Obra Nueva',
+        propertyName: 'Ático Dúplex de Obra Nueva',
         location: 'Marianao, Sant Boi de Llobregat',
         description: 'Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas..',
         area: 102,
@@ -28,7 +28,10 @@ export const products = [
             'Aire acondicionado',
         ],
         price: 330000,
-        locationOnMap,
+        locationOnMap: {
+            lat: 44,
+            lng: -80
+        },
         images: {
             main,
             eachPlace: [
@@ -40,7 +43,7 @@ export const products = [
     },
     {
         id: 2,
-        property: 'Ático Dúplex de Obra Nueva',
+        propertyName: 'Ático Dúplex de Obra Nueva',
         location: 'Marianao, Sant Boi de Llobregat',
         description: 'Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas..',
         area: 102,
@@ -61,7 +64,10 @@ export const products = [
             'Aire acondicionado',
         ],
         price: 330000,
-        locationOnMap,
+        locationOnMap: {
+            lat: 44,
+            lng: -80
+        },
         images: {
             main,
             eachPlace: [
@@ -70,5 +76,77 @@ export const products = [
                 place3
             ]
         }
-    }
+    },
+    {
+        id: 3,
+        propertyName: 'Ático Dúplex de Obra Nueva',
+        location: 'Marianao, Sant Boi de Llobregat',
+        description: 'Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas..',
+        area: 102,
+        bedrooms: 3,
+        bathroom: 2,
+        features: [
+            'Ático102 m2 (construidos)',
+            '3 Habitaciones',
+            'Segunda mano100 m2 (útiles)',
+            'Reformado',
+            '2 Baños'
+        ],
+        additionalFeatures: [
+            'Terraza',
+            'Balcón',
+            'Ascensor', 
+            'Calefacción', 
+            'Aire acondicionado',
+        ],
+        price: 330000,
+        locationOnMap: {
+            lat: 44,
+            lng: -80
+        },
+        images: {
+            main,
+            eachPlace: [
+                place1,
+                place2,
+                place3
+            ]
+        }
+    },
+    {
+        id: 4,
+        propertyName: 'Ático Dúplex de Obra Nueva',
+        location: 'Marianao, Sant Boi de Llobregat',
+        description: 'Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas..',
+        area: 102,
+        bedrooms: 3,
+        bathroom: 2,
+        features: [
+            'Ático102 m2 (construidos)',
+            '3 Habitaciones',
+            'Segunda mano100 m2 (útiles)',
+            'Reformado',
+            '2 Baños'
+        ],
+        additionalFeatures: [
+            'Terraza',
+            'Balcón',
+            'Ascensor', 
+            'Calefacción', 
+            'Aire acondicionado',
+        ],
+        price: 330000,
+        locationOnMap: {
+            lat: 44,
+            lng: -80
+        },
+        images: {
+            main,
+            eachPlace: [
+                place1,
+                place2,
+                place3
+            ]
+        }
+    },
 ]

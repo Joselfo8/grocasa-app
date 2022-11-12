@@ -1,21 +1,25 @@
-// import { products } from "../data/const/products.constants" 
+import { products } from "../data/const/products.constants" 
+
 import CardProduct from "../shared/components/cards/card-product/card-product";
+import Map from "../shared/components/map/map";
 
 export default function ProductList () {
-    // console.log(products);
-    // const renderProducts = (
-    //     products && products.length > 0
-    //     ? products.map(p => {
-    //         return (
-    //             <CardProduct product={p} />
-    //         )
-    //     })
-    //     : <div></div>
-    // ) 
+    const renderProducts = (
+        products && products.length > 0
+        ? products.map((p, index) => {
+            return (
+                <CardProduct obj={p} key={index}/>
+            )
+        })
+        : <div></div>
+    ) 
     
     return (
-        <div>
-            <CardProduct/>
+        <div className="product-list">
+            <div className="product-list-container">
+                {renderProducts}
+            </div>
+            
         </div>
     )
 }
