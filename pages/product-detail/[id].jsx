@@ -20,7 +20,7 @@ import areaIcon from "../../public/icon/WEB_MATERIAL-11.svg"
 import corazonVacio from "../../public/icon/WEB_MATERIAL-08.svg"
 import corazonLleno from "../../public/icon/WEB_MATERIAL-06.svg"
 
-// Images
+// Image
 import preview1 from "../../public/images/Rectangle -1@2x.png"
 import preview2 from "../../public/images/Rectangle -2@2x.png"
 
