@@ -6,6 +6,7 @@ import Image from "next/image"
 import bathroomIcon from "../../../../public/icon/WEB_MATERIAL-09.svg"
 import bedroomIcon from "../../../../public/icon/WEB_MATERIAL-10.svg"
 import areaIcon from "../../../../public/icon/WEB_MATERIAL-11.svg"
+import { formatNumber } from "../../../services/numbersMethods"
 
 export default function CardProduct ({obj}) {
     const {
@@ -70,7 +71,7 @@ export default function CardProduct ({obj}) {
                             </div>
                         </div>
                         <div className="card-product__description-price">
-                            <p className="price">{price}</p>
+                            <p className="price">{formatNumber(price)}</p>
                         </div>
                         <div className="card-product__description-button">
                             <Link href={`/product-detail/${id}`} >

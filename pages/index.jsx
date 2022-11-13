@@ -1,7 +1,7 @@
 import { products } from "../data/const/products.constants" 
 
+// Components
 import CardProduct from "../shared/components/cards/card-product/card-product";
-import Map from "../shared/components/map/map";
 
 export default function ProductList () {
     const renderProducts = (

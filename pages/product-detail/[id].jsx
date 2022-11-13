@@ -17,6 +17,7 @@ import Carousel from "../../shared/components/carousel/carousel"
 // Data / Helpers / Services
 import {products} from "../../data/const/products.constants"
 import { twoRandomNumbers } from "../../shared/services/arrayMethods"
+import { formatNumber } from "../../shared/services/numbersMethods"
 
 export default function ProductList () {
     const router = useRouter()
@@ -97,7 +98,7 @@ export default function ProductList () {
 
                                 <div className="product-detail__description-main-qualification">
                                     <div className="product-detail__description-main-qualification-price">
-                                        <p>{property.price}</p>
+                                        <p>{formatNumber(property.price)}</p>
                                     </div>
 
                                     <div onClick={addFavorite} className="product-detail__description-main-qualification-favorite">

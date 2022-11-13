@@ -179,7 +179,6 @@
 
     &__notify {
         width: 61rem;
-        // height: 100px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -201,6 +200,7 @@
             height: 45px;
             border-radius: 20px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1 rgba(0, 0, 0, 0.06);
+            cursor: pointer;
         }
 
         input[type="checkbox"]::before {
@@ -214,6 +214,7 @@
             transform: scale(0.9);
             transition: 0.7s ease all;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1 rgba(0, 0, 0, 0.06);
+            
         }
 
         input:checked[type="checkbox"]::before {
@@ -223,6 +224,13 @@
 
         >button {
             @extend %button-primary;
+            cursor: pointer;
+        }
+
+        >button:hover {
+            background-color: $primary;
+            color: #fff;
+            border-color: #fff;
         }
     }
 

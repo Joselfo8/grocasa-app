@@ -39,8 +39,8 @@ export const products = [
         ],
         price: 330000,
         locationOnMap: {
-            lat: 44,
-            lng: -80
+            lat: 41.34586716715483,
+            lng: 2.0357963829442207
         },
         images: {
             main,
@@ -74,8 +74,8 @@ export const products = [
         ],
         price: 400000,
         locationOnMap: {
-            lat: 43,
-            lng: -81
+            lat: 4.880994111027236,
+            lng: -74.03260306103746
         },
         images: {
             main: main2,
@@ -110,8 +110,8 @@ export const products = [
         ],
         price: 580000,
         locationOnMap: {
-            lat: 44,
-            lng: -88
+            lat: 4.84470908762788,
+            lng: -74.06237940237115
         },
         images: {
             main: main3,
@@ -146,8 +146,8 @@ export const products = [
         ],
         price: 600000,
         locationOnMap: {
-            lat: 44,
-            lng: -90
+            lat: 4.881782634333961,
+            lng: -74.03628320237105
         },
         images: {
             main: main4,

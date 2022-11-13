@@ -61,6 +61,13 @@
 
             .button {
                 @extend %button-primary;
+                cursor: pointer;
+            }
+
+            .button:hover {
+                background-color: $primary;
+                color: #fff;
+                border-color: #fff;
             }
         }
     }
