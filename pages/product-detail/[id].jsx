@@ -144,8 +144,8 @@ export default function ProductList () {
 
                         <div className="product-detail__map">
                             <Map
-                                lat={40}
-                                lng={-80}
+                                lat={property.locationOnMap.lat}
+                                lng={property.locationOnMap.lng}
                             />
                         </div>
                         

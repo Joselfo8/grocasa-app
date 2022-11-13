@@ -1,30 +1,35 @@
-import { products } from "../../../data/const/products.constants.jsx"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Carousel (props) {
     const [array, setarray] = useState([])
+    
+    let position = 0
 
-    function changeImage() {
+    function changeImage(e) {
         const container = document.querySelector('.carousel-container');
         const slide = document.querySelectorAll('.slide');
+        
+        if(position === 0 &&  e.target.className === 'left') return
+        if(position === slide.length-1 &&  e.target.className === 'right') return
+
+        if(e.target.className === 'left') position = position - 1
+        if(e.target.className === 'right') position = position + 1
 
         slide.forEach((e, index) => {
-            slide[index].addEventListener('click', () => {
-                let position = index
-                // Calcular el porcentaje de deslpazamiento
-                let displacementPercentage = 100 / slide.length
-                let operation = position * -(displacementPercentage)
+            slide[index].addEventListener('click', () => { position = index })
+        })
 
-                container.style.transform = `translateX(${ operation }%)`
+        let displacementPercentage = 100 / slide.length
+        let operation = position * -(displacementPercentage)
 
-                slide.forEach((d, i) => {
-                    slide[i].classList.remove('active')
-                })
+        container.style.transform = `translateX(${ operation }%)`
 
-                slide[index].classList.add('active')
-            })
-        });
+        slide.forEach((d, i) => {
+            slide[i].classList.remove('active')
+        })
+
+        slide[position].classList.add('active')
     }
 
     const renderImages = (
@@ -61,10 +66,16 @@ export default function Carousel (props) {
         <div className="carousel">
 
             <div id="prueba" className="carousel-container" 
-                style={{width: (array.length * 100) -20 + '%'}}
+                style={ {width: (array.length * 100) -20 + '%'} }
             >
                 {renderImages}
             </div>
+            
+            <div className="carousel-controls">
+                <img onClick={(e) => changeImage(e)} className="left" src="https://img.icons8.com/sf-black/64/null/back.png"/>
+                <img onClick={(e) => changeImage(e)} className="right" src="https://img.icons8.com/sf-black/64/null/back.png"/>
+            </div>
+            
             <div className="carousel-slides">
                 <ul className="slides">
                     <li onClick={changeImage} className="slide active"></li>

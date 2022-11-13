@@ -1,14 +1,8 @@
-// import place1 from "../../assets/images/Rectangle -1@2x.png"
-// import place2 from "../../assets/images/Rectangle -2@2x.png"
-// import place3 from "../../assets/images/Rectangle -3@2x.png"
-// import main from "../../assets/images/Rectangle 169@2x.png"
-// import locationOnMap from "../../assets/images/Screenshot 2020-07-06 at 11.53.49@2x.png"
-
+import main from "../../public/images/Rectangle 169@2x.png"
 import place1 from "../../public/images/Rectangle -1@2x.png"
 import place2 from "../../public/images/Rectangle -2@2x.png"
 import place3 from "../../public/images/Rectangle -3@2x.png"
-import main from "../../public/images/Rectangle 169@2x.png"
-import locationOnMap from "../../public/images/Screenshot 2020-07-06 at 11.53.49@2x.png"
+// import luna1 from "../../public/images/la_luna_1.jpg"
 
 export const products = [
     {
@@ -49,30 +43,29 @@ export const products = [
     },
     {
         id: 2,
-        propertyName: 'Ático Dúplex de Obra Nueva',
-        location: 'Marianao, Sant Boi de Llobregat',
-        description: 'Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas..',
-        area: 102,
-        bedrooms: 3,
-        bathroom: 2,
+        propertyName: 'Hacienda La Luna',
+        location: 'Chia, Cundinamarca',
+        description: 'Hermosa casa en lote 856M2 1er piso sala-comedor con salida al jardín, terraza con pérgola, huerta y árboles frutales; estudio, baño social, cocina abierta, zona de lavandería, cuarto y baño de servicio, 4 parqueaderos. 2do piso hall de tv, habitación ppal con walk-in closet y baño con ducha, 2 habitaciones auxiliares cu con baño privado y balcón. 3er piso estudio abierto, amplia habitación, baño y depósito. Condominio campestre Sendero ecológico de aprox. 1km, cancha de tenis en polvo de ladrillo, cancha múltiple, salón de reuniones, salón de juegos y de tv, piscina climatizada cubierta, zonas húmedas, parque infantil y hermosas zonas verdes. Vigilancia 247 y CCTV',
+        area: 330,
+        bedrooms: 4,
+        bathroom: 4,
         features: [
-            'Ático102 m2 (construidos)',
-            '3 Habitaciones',
-            'Segunda mano100 m2 (útiles)',
-            'Reformado',
-            '2 Baños'
+            'Ático 330 m2 (construidos)',
+            '4 Habitaciones',
+            'Lago cerca',
+            'Nuevo',
+            '4 Baños'
         ],
         additionalFeatures: [
             'Terraza',
             'Balcón',
-            'Ascensor', 
             'Calefacción', 
             'Aire acondicionado',
         ],
-        price: 330000,
+        price: 400000,
         locationOnMap: {
-            lat: 44,
-            lng: -80
+            lat: 43,
+            lng: -81
         },
         images: {
             main,
@@ -85,30 +78,30 @@ export const products = [
     },
     {
         id: 3,
-        propertyName: 'Ático Dúplex de Obra Nueva',
-        location: 'Marianao, Sant Boi de Llobregat',
-        description: 'Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas..',
-        area: 102,
-        bedrooms: 3,
-        bathroom: 2,
+        propertyName: 'Conjunto Los Prados De La Balsa',
+        location: 'Chia, Los prados',
+        description: 'Casa con lote independiente en Chia Vereda la Balsa. Área de lote 1050 mt y un área construida de 270 mt. Casa de 3 niveles, sala con chimenea, comedor independiente, cocina abierta, zona de lavandería, cuarto y baño de servicio, 4 habitaciones, 4 baños, estudio, terraza, zona de BBQ, jardín grande. Ubicada en un conjunto de 8 casas. Espacio para 5 carros.',
+        area: 270,
+        bedrooms: 4,
+        bathroom: 5,
         features: [
-            'Ático102 m2 (construidos)',
-            '3 Habitaciones',
-            'Segunda mano100 m2 (útiles)',
+            'Ático 270 m2 (construidos)',
+            '4 Habitaciones',
+            'Segunda mano 250 m2 (útiles)',
             'Reformado',
-            '2 Baños'
+            '5 Baños'
         ],
         additionalFeatures: [
             'Terraza',
             'Balcón',
-            'Ascensor', 
+            'Parqueadero', 
             'Calefacción', 
-            'Aire acondicionado',
+            'Gimnasio',
         ],
         price: 330000,
         locationOnMap: {
             lat: 44,
-            lng: -80
+            lng: -88
         },
         images: {
             main,
@@ -121,30 +114,30 @@ export const products = [
     },
     {
         id: 4,
-        propertyName: 'Ático Dúplex de Obra Nueva',
-        location: 'Marianao, Sant Boi de Llobregat',
-        description: 'Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas.. Dúplex de obra seminueva en Marianao. Finca del 2019. El piso consta de una planta con entrada al salón y final en terraza. El salón da entrada a la cocina y al pasillo que distribuye una de las habitaciones dobles y uno de los cuartos. de baño de tres piezas..',
-        area: 102,
-        bedrooms: 3,
-        bathroom: 2,
+        propertyName: 'Hacienda Fontanar',
+        location: 'Chia, Fontanar',
+        description: 'Hermosa casa para venta en Hacienda Fontanar Chia. Super amplia desde su construcción con Amarilo. Con tres habitaciones en el primer piso y la principal en el segundo. Excelentes acabados, mucha iluminación natural, pérgola BBQ en el jardín, amplia cocina ultramoderna',
+        area: 392,
+        bedrooms: 4,
+        bathroom: 5,
         features: [
-            'Ático102 m2 (construidos)',
-            '3 Habitaciones',
-            'Segunda mano100 m2 (útiles)',
+            'Ático 350 m2 (construidos)',
+            '4 Habitaciones',
+            'Segunda mano 300 m2 (útiles)',
             'Reformado',
             '2 Baños'
         ],
         additionalFeatures: [
             'Terraza',
             'Balcón',
-            'Ascensor', 
+            'Gimnasio', 
             'Calefacción', 
             'Aire acondicionado',
         ],
-        price: 330000,
+        price: 600000,
         locationOnMap: {
             lat: 44,
-            lng: -80
+            lng: -90
         },
         images: {
             main,
