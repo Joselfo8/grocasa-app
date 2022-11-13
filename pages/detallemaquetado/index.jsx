@@ -2,14 +2,14 @@ import Image from "next/image"
 
 import CardProductLayout from "../../shared/components/cards/card-product/card-product-layout"
 
-import bathroom from "../../assets/icon/WEB_MATERIAL-09.svg"
-import bedroom from "../../assets/icon/WEB_MATERIAL-10.svg"
-import area from "../../assets/icon/WEB_MATERIAL-11.svg"
-import corazonVacio from "../../assets/icon/WEB_MATERIAL-08.svg"
+import bathroom from "../../public/icon/WEB_MATERIAL-09.svg"
+import bedroom from "../../public/icon/WEB_MATERIAL-10.svg"
+import area from "../../public/icon/WEB_MATERIAL-11.svg"
+import corazonVacio from "../../public/icon/WEB_MATERIAL-08.svg"
 
-import map from "../../assets/images/map.png"
-import preview1 from "../../assets/images/Rectangle -1@2x.png"
-import preview2 from "../../assets/images/Rectangle -2@2x.png"
+import map from "../../public/images/map.png"
+import preview1 from "../../public/images/Rectangle -1@2x.png"
+import preview2 from "../../public/images/Rectangle -2@2x.png"
 
 
 export default function DetalleEscritorio () {

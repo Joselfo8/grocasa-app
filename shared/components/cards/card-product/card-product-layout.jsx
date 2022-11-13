@@ -3,12 +3,12 @@ import Link from "next/link"
 import Image from "next/image"
 
 // Images
-import mainImage from "../../../../assets/images/Rectangle 169@2x.png"
+import mainImage from "../../../../public/images/Rectangle 169@2x.png"
 
 // SVG's
-import bathroom from "../../../../assets/icon/WEB_MATERIAL-09.svg"
-import bedroom from "../../../../assets/icon/WEB_MATERIAL-10.svg"
-import area from "../../../../assets/icon/WEB_MATERIAL-11.svg"
+import bathroom from "../../../../public/icon/WEB_MATERIAL-09.svg"
+import bedroom from "../../../../public/icon/WEB_MATERIAL-10.svg"
+import area from "../../../../public/icon/WEB_MATERIAL-11.svg"
 
 export default function CardProductLayout () {
     

@@ -1,8 +1,14 @@
-import place1 from "../../assets/images/Rectangle -1@2x.png"
-import place2 from "../../assets/images/Rectangle -2@2x.png"
-import place3 from "../../assets/images/Rectangle -3@2x.png"
-import main from "../../assets/images/Rectangle 169@2x.png"
-import locationOnMap from "../../assets/images/Screenshot 2020-07-06 at 11.53.49@2x.png"
+// import place1 from "../../assets/images/Rectangle -1@2x.png"
+// import place2 from "../../assets/images/Rectangle -2@2x.png"
+// import place3 from "../../assets/images/Rectangle -3@2x.png"
+// import main from "../../assets/images/Rectangle 169@2x.png"
+// import locationOnMap from "../../assets/images/Screenshot 2020-07-06 at 11.53.49@2x.png"
+
+import place1 from "../../public/images/Rectangle -1@2x.png"
+import place2 from "../../public/images/Rectangle -2@2x.png"
+import place3 from "../../public/images/Rectangle -3@2x.png"
+import main from "../../public/images/Rectangle 169@2x.png"
+import locationOnMap from "../../public/images/Screenshot 2020-07-06 at 11.53.49@2x.png"
 
 export const products = [
     {

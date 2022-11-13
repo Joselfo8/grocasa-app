@@ -3,9 +3,9 @@ import Link from "next/link"
 import Image from "next/image"
 
 // SVG's
-import bathroomIcon from "../../../../assets/icon/WEB_MATERIAL-09.svg"
-import bedroomIcon from "../../../../assets/icon/WEB_MATERIAL-10.svg"
-import areaIcon from "../../../../assets/icon/WEB_MATERIAL-11.svg"
+import bathroomIcon from "../../../../public/icon/WEB_MATERIAL-09.svg"
+import bedroomIcon from "../../../../public/icon/WEB_MATERIAL-10.svg"
+import areaIcon from "../../../../public/icon/WEB_MATERIAL-11.svg"
 
 export default function CardProduct ({obj}) {
     const {

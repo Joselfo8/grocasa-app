@@ -1,6 +1,6 @@
 import Image from "next/image"
-import material5 from "../../../../assets/icon/WEB_MATERIAL-05.svg"
-import slogan from "../../../../assets/images/Grocasa.png"
+import material5 from "../../../../public/icon/WEB_MATERIAL-05.svg"
+import slogan from "../../../../public/images/Grocasa.png"
 
 export default function Navbar () {
     
