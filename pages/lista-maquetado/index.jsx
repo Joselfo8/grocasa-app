@@ -1,14 +1,14 @@
-import CardProduct from "../../shared/components/cards/card-product/card-product"
+import CardProductLayout from "../../shared/components/cards/card-product/card-product-layout"
 
 export default function ProductList () {
     
     return (
         <div className="product-list">
             <div className="product-list-container">
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
+                <CardProductLayout/>
+                <CardProductLayout/>
+                <CardProductLayout/>
+                <CardProductLayout/>
             </div>
         </div>
     )

@@ -1,37 +1,11 @@
-import React, { useEffect, useRef } from "react"
+import { products } from "../../../data/const/products.constants.jsx"
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
-export default function Carousel () {
-    // const container = document.querySelector('carousel-container')
-    // const slide = document.querySelectorAll('slide')
-    // const slide = useRef('slide')
+export default function Carousel (props) {
+    console.log('DESDE CARRUSEL', props);
 
-    // const ref = useRef()
-
-    // console.log(ref.current)
-
-    // de esta forma hice el get element by 
-    // const image = React.createRef();
-    
-
-
-    const referencia = useRef()
-
-    useEffect(() => {
-        // const element = referencia.current
-        console.log(referencia.current);
-        const el = document.querySelector('.carousel-container');
-        console.log('qs prueba: ', el);
-        const sub = document.querySelectorAll('.img');
-        console.log('qsAll prueba:', sub);
-
-    }, [])
-
-
-    function changeColor() {
-        // console.log(image);
-        // image.current.style.color = 'blue';
-        referencia.current.style.color = 'blue';
-    }
+    const [array, setarray] = useState([])
 
     function changeImage() {
         const container = document.querySelector('.carousel-container');
@@ -47,7 +21,6 @@ export default function Carousel () {
                 container.style.transform = `translateX(${ operation }%)`
 
                 slide.forEach((d, i) => {
-                    // se puede dejar classname
                     slide[i].classList.remove('active')
                 })
 
@@ -56,24 +29,66 @@ export default function Carousel () {
         });
     }
 
+    const renderImages = (
+        array.length > 0
+        ? array.map((img, index) => {
+            return (
+                <Image
+                    src={img}
+                    alt={`Imagen ${index}`}
+                    layout="responsive"
+                    className="img"
+                    key={index}
+                />
+            )
+        })
+        : <div>Cargando imagenes...</div>
+    )
 
+    const renderSlides = (
+        array.length > 0
+        ? array.map((img, index) => {
+            if(index !== 0) return (
+                <li onClick={changeImage} className="slide" key={index}></li>
+            )
+        })
+        : <div>Cargando imagenes...</div>
+    )
 
-    return (
+    const renderCarousel = (
+        array && array.length === 0 
+        ?
+        <div>Cargando Carousel...</div>
+        :
         <div className="carousel">
-            {/* <p ref={image}>Prueba</p> */}
-            {/* <p ref={referencia}>Prueba</p>
-            <button onClick={changeColor} >Cambiar color</button> */}
-            {/* <button  >Cambiar color</button> */}
 
-            <div id="prueba" className="carousel-container">
-                <img src="#" alt="Imagen 1" className="img"/>
-                <img src="#" alt="Imagen 2" className="img"/>
+            <div id="prueba" className="carousel-container" 
+                style={{width: (array.length * 100) -20 + '%'}}
+            >
+                {renderImages}
+            </div>
+            <div className="carousel-slides">
+                <ul className="slides">
+                    <li onClick={changeImage} className="slide active"></li>
+                    {renderSlides}
+                </ul>
             </div>
 
-            <ul className="slides">
-                <li onClick={changeImage} className="slide active"></li>
-                <li onClick={changeImage} className="slide"></li>
-            </ul>
+        </div>
+        
+    )
+
+    useEffect(() => {
+        setarray(props.props)
+    }, [])
+
+    useEffect(() => {
+        console.log('renderiza array');
+    }, [array])
+
+    return (
+        <div>
+            {renderCarousel}
         </div>
     )
 }

@@ -16,6 +16,7 @@ import preview2 from "../../assets/images/Rectangle -2@2x.png"
 // Components
 import Map from "../../shared/components/map/map"
 import CardProduct from "../../shared/components/cards/card-product/card-product"
+import Carousel from "../../shared/components/carousel/carousel"
 
 // Data / Helpers / Services
 import {products} from "../../data/const/products.constants"
@@ -55,31 +56,7 @@ export default function ProductList () {
                 <div className="product-detail" key={index} >
                     
                     <div className="product-detail__header">
-                        {/* Pendiente carousel */}
-                        <div id="prueba" className="product-detail__header-container">
-                            
-                            <Image
-                                src={preview1}
-                                alt="Imagen 1"
-                                layout="responsive"
-                            />
-                            <Image
-                                src={preview2}
-                                alt="Imagen 2"
-                                layout="responsive"
-                            />
-                        </div>
-
-                        <div className="product-detail__header-controls">
-                            <img className="left" src="https://img.icons8.com/sf-black/64/null/back.png"/>
-                            <img className="right" src="https://img.icons8.com/sf-black/64/null/back.png"/>
-                        </div>
-
-                        <div className="product-detail__header-slides">
-                            <div className="product-detail__header-slides-slide active"></div>
-                            <div className="product-detail__header-slides-slide"></div>
-                            <div className="product-detail__header-slides-slide"></div>
-                        </div>
+                        <Carousel props={property.images.eachPlace} />
                     </div>
 
                     <div className="product-detail-body">

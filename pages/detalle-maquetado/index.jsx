@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import CardProduct from "../../shared/components/cards/card-product/card-product"
+import CardProductLayout from "../../shared/components/cards/card-product/card-product-layout"
 
 import bathroom from "../../assets/icon/WEB_MATERIAL-09.svg"
 import bedroom from "../../assets/icon/WEB_MATERIAL-10.svg"
@@ -143,8 +143,8 @@ export default function DetalleEscritorio () {
                 </div>
 
                 <div className="product-detail__suggestions">
-                    <CardProduct/>
-                    <CardProduct/>
+                    <CardProductLayout/>
+                    <CardProductLayout/>
                 </div>
             </div>
 

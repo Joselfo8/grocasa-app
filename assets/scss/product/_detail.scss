@@ -5,8 +5,8 @@
 
     &__header {
         width: 100%;
-        position: relative;
         overflow: hidden;
+        position: relative;
 
         &-container {
             width: 185%;
@@ -167,7 +167,6 @@
     }
 
     &__map {
-        background-color: bisque;
         height: 500px;
         width: 100%;
         max-width: 62rem;
@@ -175,6 +174,7 @@
 
     &__notify {
         width: 61rem;
+        // height: 100px;
         display: flex;
         flex-direction: row;
         align-items: center;
