@@ -2,27 +2,12 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import Image from "next/image"
 
-// // SVGs
-// import bathroomIcon from "../../assets/icon/WEB_MATERIAL-09.svg"
-// import bedroomIcon from "../../assets/icon/WEB_MATERIAL-10.svg"
-// import areaIcon from "../../assets/icon/WEB_MATERIAL-11.svg"
-// import corazonVacio from "../../assets/icon/WEB_MATERIAL-08.svg"
-// import corazonLleno from "../../assets/icon/WEB_MATERIAL-06.svg"
-
-// // Images
-// import preview1 from "../../assets/images/Rectangle -1@2x.png"
-// import preview2 from "../../assets/images/Rectangle -2@2x.png"
-
 // SVGs
 import bathroomIcon from "../../public/icon/WEB_MATERIAL-09.svg"
 import bedroomIcon from "../../public/icon/WEB_MATERIAL-10.svg"
 import areaIcon from "../../public/icon/WEB_MATERIAL-11.svg"
 import corazonVacio from "../../public/icon/WEB_MATERIAL-08.svg"
 import corazonLleno from "../../public/icon/WEB_MATERIAL-06.svg"
-
-// Image
-import preview1 from "../../public/images/Rectangle -1@2x.png"
-import preview2 from "../../public/images/Rectangle -2@2x.png"
 
 // Components
 import Map from "../../shared/components/map/map"

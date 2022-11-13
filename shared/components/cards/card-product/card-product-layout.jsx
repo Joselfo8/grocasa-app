@@ -64,7 +64,7 @@ export default function CardProductLayout () {
                     <p className="price">330.000€</p>
                 </div>
                 <div className="card-product__description-button">
-                    <button>Más info</button>
+                    <button className="button">Más info</button>
                 </div>
             </div>
         </div>
