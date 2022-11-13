@@ -3,8 +3,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Carousel (props) {
-    console.log('DESDE CARRUSEL', props);
-
     const [array, setarray] = useState([])
 
     function changeImage() {
