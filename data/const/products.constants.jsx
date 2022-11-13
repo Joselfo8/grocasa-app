@@ -2,7 +2,17 @@ import main from "../../public/images/Rectangle 169@2x.png"
 import place1 from "../../public/images/Rectangle -1@2x.png"
 import place2 from "../../public/images/Rectangle -2@2x.png"
 import place3 from "../../public/images/Rectangle -3@2x.png"
-// import luna1 from "../../public/images/la_luna_1.jpg"
+import main2 from "../../public/images/la_luna_main.jpg"
+import luna1 from "../../public/images/la_luna_1.jpg"
+import luna2 from "../../public/images/la_luna_2.jpg"
+import luna3 from "../../public/images/la_luna_3.jpg"
+import main3 from "../../public/images/prados_main.jpg"
+import prados1 from "../../public/images/prados_1.jpg"
+import prados2 from "../../public/images/prados_2.jpg"
+import prados3 from "../../public/images/prados_3.jpg"
+import main4 from "../../public/images/fontanar_main.jpg"
+import fontanar1 from "../../public/images/fontanar_1.jpg"
+import fontanar2 from "../../public/images/fontanar_2.jpg"
 
 export const products = [
     {
@@ -68,11 +78,11 @@ export const products = [
             lng: -81
         },
         images: {
-            main,
+            main: main2,
             eachPlace: [
-                place1,
-                place2,
-                place3
+                luna1,
+                luna2,
+                luna3
             ]
         }
     },
@@ -98,17 +108,17 @@ export const products = [
             'Calefacción', 
             'Gimnasio',
         ],
-        price: 330000,
+        price: 580000,
         locationOnMap: {
             lat: 44,
             lng: -88
         },
         images: {
-            main,
+            main: main3,
             eachPlace: [
-                place1,
-                place2,
-                place3
+                prados1,
+                prados2,
+                prados3
             ]
         }
     },
@@ -140,11 +150,10 @@ export const products = [
             lng: -90
         },
         images: {
-            main,
+            main: main4,
             eachPlace: [
-                place1,
-                place2,
-                place3
+                fontanar1,
+                fontanar2
             ]
         }
     },
